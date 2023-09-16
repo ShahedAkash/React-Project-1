@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import MarkedBlogs from './components/MarkedBlogs/MarkedBlogs';
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,7 +19,16 @@ function App() {
     
 
     if(isExist){
-      return alert("already Exist.")
+      return toast.error('already Exist.', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }else{
       selectedBlogs.forEach(time =>{
         totalHours += time.credit;
@@ -27,7 +38,16 @@ function App() {
       const creditHours = creditRemainingHours - blogs.credit;
 
       if(creditHours < 0){
-        return alert("No more Credit hours left") 
+        return toast.error("No more Credit hours left", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
       }else{
         setAvailableHours(totalHours);
         setCreditRemainingHours(creditHours);
@@ -47,6 +67,7 @@ function App() {
       <h1 className=' text-3xl font-bold text-center my-10'>Course Registration</h1>
       <div className='flex gap-4'>
         <Blogs handleSelectedBlogs={handleSelectedBlogs}></Blogs>
+        <ToastContainer />
         <MarkedBlogs selectedBlogs={selectedBlogs} availableHours={availableHours} creditRemainingHours={creditRemainingHours} blogsPrice={blogsPrice}></MarkedBlogs>
       </div>
       

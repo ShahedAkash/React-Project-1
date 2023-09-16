@@ -5,7 +5,7 @@ const MarkedBlog = ({blogGoContainer}) => {
     
     return (
         <div className='mb-2'>
-            <li>{title}</li>
+            <li className=' list-none'>{title}</li>
         </div>
     );
 };

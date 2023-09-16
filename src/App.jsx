@@ -15,17 +15,22 @@ function App() {
     
 
     if(isExist){
-      alert("already Exist.")
+      return alert("already Exist.")
     }else{
       selectedBlogs.forEach(time =>{
         totalHours += time.credit;
-        // const creditHours = creditRemainingHours-time.credit;
-        setCreditRemainingHours(creditRemainingHours-time.credit);
       })
-      setAvailableHours(totalHours);
-      //setCreditRemainingHours(creditHours)
-      const forBlogsContainer = [...selectedBlogs, blogs];
-      setSelectedBlogs(forBlogsContainer);
+
+      const creditHours = creditRemainingHours - blogs.credit;
+
+      if(creditHours < 0){
+        return alert("No more Credit hours left") 
+      }else{
+        setAvailableHours(totalHours);
+        setCreditRemainingHours(creditHours)
+        const forBlogsContainer = [...selectedBlogs, blogs];
+        setSelectedBlogs(forBlogsContainer);
+      }
       
     }
     

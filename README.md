@@ -6,3 +6,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+1. 1st useState is for call json data in Blogs container and the Blog container is for call data ane by ane and show all data to App.jsx
+
+2. App.js has MarkedBlogs.jsx inside that it recive the seleceted data and show.

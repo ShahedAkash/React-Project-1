@@ -1,0 +1,74 @@
+[
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/6rcVJFy/Rectangle-2.png",
+      "title": "Introduction to C Programming",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 15000,
+      "credit": 1
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/d0pmyPB/Rectangle-2-1.png",
+      "title": "Introduction to Algorithms",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 29.99,
+      "credit": 4
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/2yR6b7W/Rectangle-2-2.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 39.99,
+      "credit": 7
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/P5JhT1j/Rectangle-2-3.png",
+      "title": "Basic Data Structures",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "price": 49.99,
+      "credit": 5
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/gWCFBNv/Rectangle-2-4.png",
+      "title": "Introduction to OOP Python",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "price": 59.99,
+      "credit": 9
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/nr5SXxC/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "price": 69.99,
+      "credit": 11
+    },
+    {
+      "id": "7",
+      "img": "https://i.ibb.co/4pDjMfS/Rectangle-2-6.png",
+      "title": "AWS, Cloud Computing",
+      "description": "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "price": 79.99,
+      "credit": 15
+    },
+    {
+      "id": "8",
+      "img": "https://i.ibb.co/xH5QJJ9/Rectangle-3.png",
+      "title": "Database (MySQL)",
+      "description": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "price": 89.99,
+      "credit": 18
+    },
+    {
+      "id": "9",
+      "img": "https://i.ibb.co/0chkPL2/Rectangle-3-1.png",
+      "title": "Problem-Solving Part",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      "price": 99.99,
+      "credit": 14
+    }
+  ]

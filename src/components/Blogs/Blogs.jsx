@@ -14,7 +14,7 @@ const Blogs = ({handleSelectedBlogs}) => {
     },[])
 
     return (
-        <div className="grid grid-cols-3 gap-4 w-2/3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full lg:w-2/3">
             {
                 blogs.map(blog => <Blog 
                     key={blog.id} 

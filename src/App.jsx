@@ -66,7 +66,7 @@ function App() {
     <>
       
       <h1 className=' text-3xl font-bold text-center my-10'>Course Registration</h1>
-      <div className='flex gap-4'>
+      <div className='flex flex-col lg:flex-row gap-4'>
         <Blogs handleSelectedBlogs={handleSelectedBlogs}></Blogs>
         <ToastContainer />
         <MarkedBlogs selectedBlogs={selectedBlogs} availableHours={availableHours} creditRemainingHours={creditRemainingHours} blogsPrice={blogsPrice}></MarkedBlogs>

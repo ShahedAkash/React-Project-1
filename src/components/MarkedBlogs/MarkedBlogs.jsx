@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import MarkedBlog from '../MarkedBlog/MarkedBlog';
+
 
 const MarkedBlogs = ({selectedBlogs, availableHours, creditRemainingHours, blogsPrice}) => {
     return (
@@ -9,11 +9,7 @@ const MarkedBlogs = ({selectedBlogs, availableHours, creditRemainingHours, blogs
             <hr />
             <h2 className=' my-2 text-xl font-semibold'>Course Name</h2>
             {
-                selectedBlogs.map((blogGoContainer,idx) => <MarkedBlog 
-                    key={idx}
-                    blogGoContainer={blogGoContainer}
-                    availableHours={availableHours}
-                    ></MarkedBlog>)
+                selectedBlogs.map((blogGoContainer,idx) => <li key={idx} className="my-2 list-decimal text-[#777676]">{blogGoContainer.title}</li>)
             }
             <hr />
             <h2 className='my-2 text-xl font-semibold'>Total Credit Hours: {availableHours}</h2>

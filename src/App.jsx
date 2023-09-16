@@ -12,6 +12,7 @@ function App() {
   const [availableHours, setAvailableHours] = useState(0);
   const [blogsPrice, setBlogsPrice] = useState(0);
 
+
   const handleSelectedBlogs = blogs => {
     const isExist = selectedBlogs.find(existId => existId.id === blogs.id);
     let totalHours = blogs.credit;
